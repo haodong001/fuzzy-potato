@@ -1,0 +1,1429 @@
+<!doctype html>
+<html lang="zh-CN" data-dalian-skin="on">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>大爱仙尊 · 春秋蝉 — 皮肤预览</title>
+    <style>
+      :root {
+        --dsw-alias-bg-base: #06070A;
+        --dsw-alias-bg-layer-1: #0A0C10;
+        --dsw-alias-bg-layer-2: #0E1116;
+        --dsw-alias-bg-layer-3: #13171D;
+        --dsw-alias-bg-overlay: #0B0E12;
+        --dsw-alias-bg-module-platform: #10141A;
+        --dsw-alias-bg-skeleton: #12161C;
+        --dsw-alias-bg-document-preview: #0A0C10;
+        --dsw-alias-bg-document-selection: rgba(143, 182, 217, 0.24);
+        --dsw-alias-bg-multi-select: rgba(143, 182, 217, 0.16);
+        --dsw-alias-bg-mask-1: rgba(2, 3, 5, 0.55);
+        --dsw-alias-bg-mask-2: rgba(2, 3, 5, 0.72);
+        --dsw-alias-bg-mask-3: rgba(2, 3, 5, 0.86);
+        --dsw-alias-bg-mask-drop: rgba(2, 3, 5, 0.62);
+        --dsw-alias-bg-mask-photo: rgba(2, 3, 5, 0.80);
+        --dsw-alias-border-l1: rgba(226, 236, 246, 0.06);
+        --dsw-alias-border-l2: rgba(226, 236, 246, 0.10);
+        --dsw-alias-border-l2-darkmode-thin: rgba(226, 236, 246, 0.08);
+        --dsw-alias-border-l3: rgba(226, 236, 246, 0.15);
+        --dsw-alias-border-l4: rgba(226, 236, 246, 0.22);
+        --dsw-alias-border-inverted: rgba(6, 7, 10, 0.85);
+        --dsw-alias-border-inverted2: rgba(6, 7, 10, 0.60);
+        --dsw-alias-label-primary: #E8EEF5;
+        --dsw-alias-label-secondary: #A9B4C0;
+        --dsw-alias-label-tertiary: #7A8592;
+        --dsw-alias-label-caption: #5B6672;
+        --dsw-alias-label-dimmed: #8C97A3;
+        --dsw-alias-label-primary-dimmed: #C7D1DB;
+        --dsw-alias-label-primary-bluish: #D5DFEA;
+        --dsw-alias-label-primary-foreground: #F5F8FB;
+        --dsw-alias-label-primary-inverted: #06070A;
+        --dsw-alias-label-document-preview: #A9B4C0;
+        --dsw-alias-label-shimmer: rgba(255, 255, 255, 0.14);
+        --dsw-alias-label-deep-diving: #8FB6D9;
+        --dsw-alias-label-deep-diving-shimmer: rgba(143, 182, 217, 0.26);
+        --dsw-alias-brand-primary: #A62A31;
+        --dsw-alias-brand-primary-invert: #E8EEF5;
+        --dsw-alias-brand-text: #E8EEF5;
+        --dsw-alias-brand-primary-new-colorprimary-new-color: #A62A31;
+        --dsw-alias-button-primary-fill: #A62A31;
+        --dsw-alias-button-primary-hover: #C0333B;
+        --dsw-alias-button-primary-dimmed: #5E181C;
+        --dsw-alias-button-contrast-fill: #E8EEF5;
+        --dsw-alias-button-elevated-fill: #14181F;
+        --dsw-alias-button-floating-fill: rgba(12, 15, 20, 0.92);
+        --dsw-alias-button-floating-hover: rgba(22, 27, 34, 0.96);
+        --dsw-alias-button-ghost-active-fill: rgba(226, 236, 246, 0.08);
+        --dsw-alias-button-ghost-active-border: rgba(226, 236, 246, 0.16);
+        --dsw-alias-button-ghost-active-hover: rgba(226, 236, 246, 0.12);
+        --dsw-alias-button-info-fill: #1B2733;
+        --dsw-alias-button-info-hover: #23323F;
+        --dsw-alias-button-tool-bar-fill: rgba(226, 236, 246, 0.05);
+        --dsw-alias-button-tool-bar-fill-invisible: transparent;
+        --dsw-alias-button-tool-bar-hover: rgba(226, 236, 246, 0.10);
+        --dsw-alias-interactive-bg-hover: rgba(226, 236, 246, 0.055);
+        --dsw-alias-interactive-bg-active: rgba(226, 236, 246, 0.09);
+        --dsw-alias-interactive-bg-hover-accent: rgba(166, 42, 49, 0.14);
+        --dsw-alias-interactive-bg-hover-danger: rgba(207, 68, 75, 0.16);
+        --dsw-alias-interactive-bg-hover-solid: #171C24;
+        --dsw-alias-state-success-primary: #5B9C85;
+        --dsw-alias-state-success-secondary: rgba(91, 156, 133, 0.16);
+        --dsw-alias-state-success-tertiary: rgba(91, 156, 133, 0.32);
+        --dsw-alias-state-error-primary: #CF444B;
+        --dsw-alias-state-error-secondary: rgba(207, 68, 75, 0.16);
+        --dsw-alias-state-warn-primary: #C69B4E;
+        --dsw-alias-state-warn-secondary: rgba(198, 155, 78, 0.16);
+        --dsw-alias-state-warn-tertiary: rgba(198, 155, 78, 0.30);
+        --dsw-alias-state-warn-label: #C69B4E;
+        --dsw-alias-state-idle-primary: #66727F;
+        --dsw-alias-state-business-primary: #8FB6D9;
+        --dsw-alias-state-business-tertiary: rgba(143, 182, 217, 0.30);
+        --dsw-alias-link: #8FB6D9;
+        --dsw-alias-markdown-code-block: #08090C;
+        --dsw-alias-markdown-code-block-banner: #0C0F13;
+        --dsw-alias-markdown-inline-code: rgba(226, 236, 246, 0.07);
+        --dsw-alias-markdown-code-segment-selected: rgba(226, 236, 246, 0.12);
+        --dsw-alias-markdown-code-segment-unselected: rgba(226, 236, 246, 0.04);
+        --dsw-alias-markdown-citation: rgba(143, 182, 217, 0.14);
+        --dsw-alias-markdown-placeholder: #5B6672;
+        --dsw-alias-markdown-tag: rgba(166, 42, 49, 0.18);
+        --dsw-alias-code-diff-added: rgba(91, 156, 133, 0.16);
+        --dsw-alias-code-diff-deleted: rgba(207, 68, 75, 0.16);
+        --dsw-alias-file-diff-added-bg: rgba(91, 156, 133, 0.13);
+        --dsw-alias-file-diff-added-gutter: rgba(91, 156, 133, 0.22);
+        --dsw-alias-file-diff-added-marker: #5B9C85;
+        --dsw-alias-file-diff-deleted-bg: rgba(207, 68, 75, 0.13);
+        --dsw-alias-file-diff-deleted-gutter: rgba(207, 68, 75, 0.22);
+        --dsw-alias-file-diff-deleted-marker: #CF444B;
+        --dsw-alias-menu-icon: #A9B4C0;
+        --dsw-alias-menu-group-header-fill: rgba(10, 12, 16, 0.94);
+        --dsw-alias-scrollbar-bg-l1: transparent;
+        --dsw-alias-scrollbar-bg-l2: transparent;
+        --dsw-alias-scrollbar-hover-l1: rgba(226, 236, 246, 0.10);
+        --dsw-alias-scrollbar-hover-l2: rgba(226, 236, 246, 0.14);
+        --dsw-alias-settings-card-fill: #0C0F13;
+        --dsw-alias-settings-card-stroke: rgba(226, 236, 246, 0.10);
+        --dsw-alias-switch-thumb: #C7D1DB;
+        --dsw-alias-toast-bg: #12161C;
+        --dsw-alias-toast-label: #E8EEF5;
+        --dsw-alias-tooltip-bg: #161B22;
+        --dsw-alias-tooltip-key-bg: rgba(226, 236, 246, 0.10);
+        --dsw-alias-turn-trigger-bg: #0F1318;
+        --dsw-alias-turn-trigger-bg-hover: #151A21;
+        --dsw-alias-onboarding-accent: #A62A31;
+        --dsw-alias-onboarding-card-fill: #0C0F13;
+        --dsw-alias-onboarding-checkbox-border: rgba(226, 236, 246, 0.22);
+        --dsw-alias-onboarding-secondary-fill: #14181F;
+        --dsw-specific-sidebar-fill: #080A0D;
+        --dsw-specific-sidebar-nav-item-hover: rgba(226, 236, 246, 0.05);
+        --dsw-specific-sidebar-nav-item-active: rgba(166, 42, 49, 0.14);
+        --dsw-specific-sidebar-nav-item-active-accent: #A62A31;
+        --dsw-specific-bubble: #0E1116;
+        --dsw-specific-bubble-highlight: #12161D;
+        --dsw-specific-input-major: #0C0F13;
+        --dsw-specific-login-input: #0C0F13;
+        --dsw-specific-menu: rgba(12, 15, 20, 0.94);
+        --dsw-specific-selector: #12161C;
+        --dsw-specific-tip: #101419;
+      }
+
+/* =========================================================================
+   大爱仙尊 · 春秋蝉 — chrome layer
+   Colours are NOT here: they arrive as alias tokens through ctx.theme.register
+   (see src/tokens.mjs). This sheet only owns what tokens cannot express:
+   corner radii, the display face, selection, crop marks and scrollbar feel.
+   Everything is keyed on html[data-dalian-skin="on"] so switching the skin off
+   in the HUD leaves zero residue.
+   ========================================================================= */
+
+html[data-dalian-skin='on'] {
+  /* Sharper corners: printed page, not a glass panel. */
+  --dsw-radius-xs: 2px;
+  --dsw-radius-sm: 3px;
+  --dsw-radius-md: 4px;
+  --dsw-radius-lg: 6px;
+  --dsw-radius-xl: 8px;
+  --dsw-radius-panel: 10px;
+
+  /* Display face for titles and the HUD; falls back through CN serifs. */
+  --dalian-serif: 'Songti SC', 'STSong', 'SimSun', 'Noto Serif SC', 'Source Han Serif SC',
+    'Source Han Serif CN', serif;
+  --dalian-mono: 'JetBrains Mono', 'SF Mono', 'Cascadia Mono', Consolas, 'SimSun', monospace;
+  --dalian-cold-line: rgba(226, 236, 246, 0.14);
+  --dalian-zhu: #a62a31;
+  --dalian-shuang: #8fb6d9;
+}
+
+/* ---- Type: headings read as cut stone, body stays the system UI face ---- */
+html[data-dalian-skin='on'] h1,
+html[data-dalian-skin='on'] h2,
+html[data-dalian-skin='on'] h3,
+html[data-dalian-skin='on'] h4,
+html[data-dalian-skin='on'] h5 {
+  font-family: var(--dalian-serif);
+  font-weight: 500;
+  letter-spacing: 0.015em;
+}
+
+/* ---- Selection: frost blue over ink, never the browser default ---- */
+html[data-dalian-skin='on'] ::selection {
+  background: rgba(143, 182, 217, 0.28);
+  color: #f5f8fb;
+}
+
+/* ---- Scrollbar: a hairline that thickens under the pointer ---- */
+html[data-dalian-skin='on'] ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html[data-dalian-skin='on'] ::-webkit-scrollbar-track {
+  background: transparent;
+}
+html[data-dalian-skin='on'] ::-webkit-scrollbar-thumb {
+  background: rgba(226, 236, 246, 0.09);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: content-box;
+}
+html[data-dalian-skin='on'] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(226, 236, 246, 0.2);
+  background-clip: content-box;
+}
+
+/* ---- Crop marks: four corner brackets, the page treated as a manga panel ---- */
+.dl-frame {
+  display: none;
+  position: fixed;
+  inset: 8px;
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0.7;
+}
+html[data-dalian-skin='on'] .dl-frame {
+  display: block;
+}
+.dl-frame i {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: rgba(226, 236, 246, 0.18);
+  border-style: solid;
+  border-width: 0;
+}
+.dl-frame i:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-top-width: 1px;
+  border-left-width: 1px;
+}
+.dl-frame i:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-top-width: 1px;
+  border-right-width: 1px;
+}
+.dl-frame i:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+.dl-frame i:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+/* The seal hangs on the right crop mark, in the empty margin beside the
+   transcript — a painter's mark, not chrome. */
+.dl-frame b {
+  position: absolute;
+  top: 15%;
+  right: 2px;
+  writing-mode: vertical-rl;
+  font-family: var(--dalian-serif);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.34em;
+  color: rgba(166, 42, 49, 0.8);
+  padding: 5px 2px;
+  border: 1px solid rgba(166, 42, 49, 0.35);
+  background: rgba(166, 42, 49, 0.06);
+  opacity: 0.9;
+  transition: opacity 200ms ease;
+}
+
+/* 用量卡片展开时，右缘的朱印让位，避免两件东西压在一起。 */
+html[data-dalian-card='open'] .dl-frame b {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-dalian-skin='on'] * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+
+/* =========================================================================
+   大爱仙尊 · 春秋蝉 — HUD (mascot + live token panel)
+   Self-contained: every colour here is a literal from src/tokens.mjs, because
+   the HUD sits above the app's surfaces and must not inherit a component's
+   local token rebinds.
+   ========================================================================= */
+
+.dl-hud {
+  position: fixed;
+  right: 24px;
+  bottom: 92px;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  pointer-events: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: #e8eef5;
+}
+
+/* ---------------- the figure ---------------- */
+
+.dl-figure {
+  position: relative;
+  width: 104px;
+  height: 126px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 220ms cubic-bezier(0.2, 0.7, 0.2, 1), filter 220ms ease;
+  filter: drop-shadow(0 18px 26px rgba(0, 0, 0, 0.55));
+}
+.dl-figure:hover,
+.dl-figure[aria-expanded='true'] {
+  transform: translateY(-2px) scale(1.015);
+}
+.dl-figure:focus-visible {
+  outline: 1px solid rgba(143, 182, 217, 0.7);
+  outline-offset: 4px;
+}
+.dl-figure .dl-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  display: block;
+}
+.dl-svg-host {
+  display: block;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* 一团极淡的墨：让白发在任何底色（包括浅色主题）上都立得住 */
+.dl-glow-plate {
+  position: absolute;
+  inset: -8% -14% -6%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(4, 5, 7, 0.62) 0%, rgba(4, 5, 7, 0.34) 46%, rgba(4, 5, 7, 0) 74%);
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.dl-art {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: dl-breathe 5.6s ease-in-out infinite;
+}
+.dl-hair-back {
+  transform-box: fill-box;
+  transform-origin: 50% 20%;
+  animation: dl-sway 8s ease-in-out infinite;
+}
+.dl-cicada {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: dl-perch 4.2s ease-in-out infinite;
+}
+.dl-iris {
+  transition: fill 300ms ease;
+}
+
+.dl-hud[data-busy='true'] .dl-iris {
+  animation: dl-glow 1.15s ease-in-out infinite;
+}
+.dl-hud[data-busy='true'] .dl-cicada {
+  animation: dl-cicada-flutter 0.9s ease-in-out infinite;
+}
+
+@keyframes dl-breathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+@keyframes dl-sway {
+  0%, 100% { transform: rotate(-0.7deg); }
+  50% { transform: rotate(0.7deg); }
+}
+@keyframes dl-perch {
+  0%, 100% { transform: translate(112px, 146px) rotate(-16deg); }
+  50% { transform: translate(112px, 145px) rotate(-13deg); }
+}
+@keyframes dl-glow {
+  0%, 100% { fill: #8e2028; }
+  50% { fill: #e0454c; }
+}
+@keyframes dl-cicada-flutter {
+  0%, 100% { transform: translate(112px, 146px) rotate(-16deg) scale(1); }
+  50% { transform: translate(112px, 146px) rotate(-16deg) scale(1.12); }
+}
+
+/* ---------------- the speech tag ---------------- */
+
+.dl-tag {
+  position: absolute;
+  right: calc(100% - 14px);
+  top: 26px;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 4px 9px 5px;
+  white-space: nowrap;
+  background: rgba(10, 12, 16, 0.94);
+  border: 1px solid rgba(226, 236, 246, 0.14);
+  border-radius: 3px;
+  box-shadow: 0 10px 22px -12px rgba(0, 0, 0, 0.9);
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #a9b4c0;
+  transition: border-color 200ms ease, color 200ms ease;
+}
+.dl-tag::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background: inherit;
+  border-right: 1px solid rgba(226, 236, 246, 0.14);
+  border-top: 1px solid rgba(226, 236, 246, 0.14);
+  transform: rotate(45deg);
+}
+.dl-tag b {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  color: #e8eef5;
+}
+.dl-tag i {
+  font-style: normal;
+  font-size: 10px;
+  color: #7a8592;
+  letter-spacing: 0.12em;
+}
+.dl-figure:hover .dl-tag {
+  border-color: rgba(166, 42, 49, 0.55);
+  color: #c7d1db;
+}
+
+/* ---------------- the panel ---------------- */
+
+.dl-card {
+  position: relative;
+  width: 272px;
+  padding: 14px 16px 12px;
+  pointer-events: auto;
+  background: linear-gradient(158deg, rgba(17, 21, 27, 0.985), rgba(7, 8, 11, 0.985));
+  border: 1px solid rgba(226, 236, 246, 0.16);
+  border-radius: 4px;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%);
+  box-shadow: 0 28px 64px -26px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(0, 0, 0, 0.4) inset;
+}
+.dl-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(166, 42, 49, 0.95), rgba(166, 42, 49, 0.15));
+}
+.dl-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(143, 182, 217, 0.55), transparent);
+}
+
+.dl-card--failed {
+  padding: 14px 16px;
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  color: #a9b4c0;
+  text-align: center;
+}
+
+.dl-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid rgba(226, 236, 246, 0.08);
+}
+.dl-head h2 {
+  margin: 0;
+  font-family: 'Songti SC', 'SimSun', 'Noto Serif SC', serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: #e8eef5;
+}
+.dl-head p {
+  margin: 3px 0 0;
+  font-size: 9.5px;
+  letter-spacing: 0.22em;
+  color: #6b7684;
+}
+.dl-head .dl-close {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: none;
+  color: #7a8592;
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+}
+.dl-head .dl-close:hover {
+  color: #e8eef5;
+  border-color: rgba(226, 236, 246, 0.16);
+  background: rgba(226, 236, 246, 0.05);
+}
+
+.dl-seal {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  display: grid;
+  place-items: center;
+  background: #a62a31;
+  color: #f6ece9;
+  font-family: 'Songti SC', 'SimSun', serif;
+  font-size: 9px;
+  line-height: 0.95;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.06em;
+  box-shadow: 0 0 0 1px rgba(166, 42, 49, 0.35), 0 6px 14px -8px rgba(166, 42, 49, 0.9);
+}
+
+.dl-total {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin: 13px 0 2px;
+  font-variant-numeric: tabular-nums;
+}
+.dl-total strong {
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #f1f5fa;
+  transition: color 400ms ease;
+}
+.dl-total strong[data-flash='true'] {
+  color: #ffffff;
+  text-shadow: 0 0 18px rgba(143, 182, 217, 0.55);
+}
+.dl-total span {
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  color: #7a8592;
+}
+.dl-total em {
+  margin-left: auto;
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: #8fb6d9;
+}
+
+.dl-meter {
+  display: flex;
+  gap: 1px;
+  height: 3px;
+  margin: 9px 0 12px;
+  background: rgba(226, 236, 246, 0.06);
+  overflow: hidden;
+}
+.dl-meter i {
+  display: block;
+  height: 100%;
+  min-width: 2px;
+  transition: width 500ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.dl-meter .dl-m-in { background: #33414f; }
+.dl-meter .dl-m-cr { background: #4f6b82; }
+.dl-meter .dl-m-cw { background: #7d94a8; }
+.dl-meter .dl-m-out { background: #a62a31; }
+
+.dl-rows {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px 12px;
+  margin: 0;
+  font-size: 11.5px;
+}
+.dl-rows dt {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #8c97a3;
+  letter-spacing: 0.06em;
+}
+.dl-rows dt::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  flex: none;
+  background: var(--dl-dot, #33414f);
+  box-shadow: 0 0 0 1px rgba(226, 236, 246, 0.12);
+}
+.dl-rows dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: #dbe3ec;
+  letter-spacing: 0.02em;
+}
+
+.dl-context {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(226, 236, 246, 0.08);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: #6b7684;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.dl-context b {
+  font-weight: 500;
+  color: #a9b4c0;
+}
+
+/* ---------------- 元石：这一炉烧了多少钱 ---------------- */
+
+.dl-cost {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 11px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(226, 236, 246, 0.08);
+}
+.dl-cost-label {
+  font-size: 9.5px;
+  letter-spacing: 0.24em;
+  color: #7a8592;
+}
+.dl-cost b {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #f1f5fa;
+  font-variant-numeric: tabular-nums;
+}
+.dl-model {
+  margin-left: auto;
+  appearance: none;
+  border: 1px solid rgba(143, 182, 217, 0.32);
+  background: rgba(143, 182, 217, 0.08);
+  color: #a9c6de;
+  font: inherit;
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  padding: 2px 7px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.dl-model:hover {
+  border-color: rgba(143, 182, 217, 0.6);
+  color: #d5e4f2;
+}
+
+.dl-peak {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: #a9b4c0;
+}
+.dl-peak i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #c69b4e;
+  box-shadow: 0 0 7px rgba(198, 155, 78, 0.75);
+}
+.dl-peak[data-peak='false'] i {
+  background: #5b9c85;
+  box-shadow: 0 0 7px rgba(91, 156, 133, 0.75);
+}
+.dl-peak-next {
+  margin-left: auto;
+  color: #6b7684;
+  font-variant-numeric: tabular-nums;
+}
+
+.dl-advice {
+  margin: 7px 0 0;
+  padding-left: 8px;
+  border-left: 1px solid rgba(166, 42, 49, 0.55);
+  font-size: 10px;
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+  color: #8c97a3;
+}
+
+.dl-foot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 11px;
+}
+.dl-btn {
+  appearance: none;
+  border: 1px solid rgba(226, 236, 246, 0.14);
+  background: rgba(226, 236, 246, 0.03);
+  color: #a9b4c0;
+  font: inherit;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  padding: 4px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+.dl-btn:hover {
+  color: #f1f5fa;
+  border-color: rgba(226, 236, 246, 0.28);
+  background: rgba(226, 236, 246, 0.07);
+}
+.dl-btn[data-on='true'] {
+  color: #f0d9d8;
+  border-color: rgba(166, 42, 49, 0.5);
+  background: rgba(166, 42, 49, 0.13);
+}
+.dl-quote {
+  margin: 10px 0 0;
+  font-family: 'Songti SC', 'SimSun', serif;
+  font-size: 10px;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+  color: #4f5966;
+  text-align: right;
+}
+
+/* ---------------- 峰谷软提醒：发送前确认 ---------------- */
+
+.dl-confirm {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: grid;
+  place-items: end center;
+  padding-bottom: 140px;
+  pointer-events: none;
+}
+.dl-confirm-box {
+  pointer-events: auto;
+  width: min(380px, calc(100vw - 32px));
+  padding: 14px 16px 13px;
+  background: linear-gradient(158deg, rgba(17, 21, 27, 0.99), rgba(7, 8, 11, 0.99));
+  border: 1px solid rgba(226, 236, 246, 0.16);
+  border-left: 2px solid #c69b4e;
+  border-radius: 4px;
+  box-shadow: 0 28px 64px -26px rgba(0, 0, 0, 0.95);
+}
+.dl-confirm-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  color: #c69b4e;
+}
+.dl-confirm-text {
+  margin: 8px 0 0;
+  font-size: 12.5px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: #c7d1db;
+}
+.dl-confirm-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.dl-btn--danger {
+  color: #f0d9d8;
+  border-color: rgba(166, 42, 49, 0.55);
+  background: rgba(166, 42, 49, 0.16);
+}
+.dl-btn--danger:hover {
+  background: rgba(166, 42, 49, 0.28);
+  border-color: rgba(166, 42, 49, 0.8);
+  color: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .dl-hud { right: 12px; bottom: 78px; }
+  .dl-card { width: 236px; }
+  .dl-figure { width: 84px; height: 102px; }
+  .dl-tag { display: none; }
+}
+
+
+/* 预览页外壳：模仿 DSH Web GUI 的三列骨架，只为了让皮肤/挂件在真实密度下受检。
+   这不是插件的一部分，只服务于 preview/*.html。 */
+
+* { box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--dsw-alias-bg-base);
+  color: var(--dsw-alias-label-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 248px minmax(0, 1fr);
+  height: 100%;
+}
+
+/* ---------------- sidebar ---------------- */
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 12px 12px;
+  background: var(--dsw-specific-sidebar-fill);
+  border-right: 1px solid var(--dsw-alias-border-l3);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 6px 14px;
+  font-family: var(--dalian-serif);
+  font-size: 12.5px;
+  letter-spacing: 0.12em;
+  color: var(--dsw-alias-label-secondary);
+}
+.brand i {
+  width: 14px;
+  height: 14px;
+  background: var(--dsw-alias-brand-primary);
+  clip-path: polygon(0 0, 100% 0, 100% 62%, 62% 100%, 0 100%);
+}
+
+.new {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border: 1px solid var(--dsw-alias-border-l3);
+  border-radius: var(--dsw-radius-sm);
+  background: linear-gradient(180deg, rgba(226, 236, 246, 0.04), rgba(226, 236, 246, 0.01));
+  color: var(--dsw-alias-label-primary);
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+}
+.new b {
+  color: var(--dsw-alias-brand-primary);
+  font-weight: 400;
+}
+
+.nav-label {
+  padding: 12px 8px 5px;
+  font-size: 9.5px;
+  letter-spacing: 0.26em;
+  color: var(--dsw-alias-label-caption);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 8px;
+  border-radius: var(--dsw-radius-sm);
+  font-size: 12.5px;
+  color: var(--dsw-alias-label-secondary);
+}
+.row.on {
+  background: var(--dsw-specific-sidebar-nav-item-active);
+  color: var(--dsw-alias-label-primary);
+  box-shadow: inset 2px 0 0 var(--dsw-specific-sidebar-nav-item-active-accent);
+}
+.row .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.5;
+}
+.row .meta {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--dsw-alias-label-caption);
+  font-variant-numeric: tabular-nums;
+}
+
+.side-foot {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--dsw-alias-border-l2);
+  font-size: 12px;
+  color: var(--dsw-alias-label-tertiary);
+}
+
+/* ---------------- main column ---------------- */
+
+.main {
+  display: grid;
+  grid-template-rows: 46px minmax(0, 1fr) auto;
+  min-width: 0;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--dsw-alias-border-l2);
+  background: color-mix(in srgb, var(--dsw-alias-bg-base) 88%, transparent);
+}
+.top h1 {
+  margin: 0;
+  font-family: var(--dalian-serif);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.top .chip {
+  margin-left: auto;
+  padding: 2px 7px;
+  border: 1px solid var(--dsw-alias-border-l3);
+  border-radius: var(--dsw-radius-xs);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: var(--dsw-alias-label-tertiary);
+}
+
+.thread {
+  overflow: auto;
+  padding: 26px 0 10px;
+}
+.thread-inner {
+  width: min(760px, calc(100% - 64px));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.user {
+  align-self: flex-end;
+  max-width: 78%;
+  padding: 9px 13px;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-radius: var(--dsw-radius-md);
+  background: var(--dsw-specific-bubble);
+  font-size: 13.5px;
+  color: var(--dsw-alias-label-primary-dimmed);
+}
+
+.assistant h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: var(--dsw-alias-label-primary);
+}
+.assistant p {
+  margin: 0 0 10px;
+  color: var(--dsw-alias-label-secondary);
+  font-size: 13.5px;
+}
+.assistant p b {
+  color: var(--dsw-alias-label-primary);
+  font-weight: 500;
+}
+.assistant code {
+  padding: 1px 5px;
+  border-radius: 2px;
+  background: var(--dsw-alias-markdown-inline-code);
+  font-family: var(--dalian-mono);
+  font-size: 11.5px;
+  color: #cfe0ef;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 10px;
+  padding: 7px 10px;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-left: 2px solid var(--dsw-alias-state-business-primary);
+  border-radius: var(--dsw-radius-sm);
+  background: var(--dsw-alias-bg-layer-1);
+  font-size: 11.5px;
+  color: var(--dsw-alias-label-tertiary);
+}
+.tool b {
+  color: var(--dsw-alias-label-secondary);
+  font-weight: 500;
+}
+.tool .ok {
+  margin-left: auto;
+  color: var(--dsw-alias-state-success-primary);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+pre {
+  margin: 0 0 10px;
+  padding: 11px 12px;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-radius: var(--dsw-radius-sm);
+  background: var(--dsw-alias-markdown-code-block);
+  font-family: var(--dalian-mono);
+  font-size: 11.5px;
+  line-height: 1.75;
+  color: #b9c6d4;
+  overflow: hidden;
+}
+pre span.k { color: #b48ead; }
+pre span.s { color: #8fbf9f; }
+pre span.c { color: #55606d; }
+pre span.f { color: #8fb6d9; }
+
+.seal-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0 2px;
+  font-family: var(--dalian-serif);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--dsw-alias-label-caption);
+}
+.seal-line::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--dsw-alias-border-l3), transparent);
+}
+
+/* ---------------- composer ---------------- */
+
+.composer {
+  padding: 0 0 14px;
+}
+.composer-inner {
+  width: min(760px, calc(100% - 64px));
+  margin: 0 auto;
+}
+.card {
+  border: 1px solid var(--dsw-alias-border-l3);
+  border-radius: var(--dsw-radius-md);
+  background: var(--dsw-specific-input-major);
+  box-shadow: 0 24px 48px -30px #000;
+}
+.card .text {
+  padding: 12px 14px 6px;
+  font-size: 13.5px;
+  color: var(--dsw-alias-label-tertiary);
+}
+.card .dock {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 12px 9px;
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: var(--dsw-alias-label-caption);
+  font-variant-numeric: tabular-nums;
+}
+.card .dock .sep {
+  width: 1px;
+  height: 9px;
+  background: var(--dsw-alias-border-l3);
+}
+.card .dock .ring {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.card .ring svg {
+  display: block;
+}
+
+/* ---------------- HUD markup used by the preview ---------------- */
+
+.pv-tag {
+  position: absolute;
+  right: calc(100% - 14px);
+  top: 26px;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 4px 9px 5px;
+  white-space: nowrap;
+  background: rgba(10, 12, 16, 0.94);
+  border: 1px solid rgba(226, 236, 246, 0.14);
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 1;
+  color: #a9b4c0;
+}
+.pv-tag b {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: #e8eef5;
+}
+.pv-tag i {
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: #7a8592;
+}
+.pv-tag::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background: inherit;
+  border-right: 1px solid rgba(226, 236, 246, 0.14);
+  border-top: 1px solid rgba(226, 236, 246, 0.14);
+  transform: rotate(45deg);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="side">
+        <div class="brand"><i></i>DeepSeek Harness</div>
+        <div class="new"><b>+</b> 新建会话</div>
+
+        <div class="nav-label">会话</div>
+        <div class="row on"><span class="dot"></span>大爱仙尊 · 春秋蝉<span class="meta">3.42M</span></div>
+        <div class="row"><span class="dot"></span>把插件打包成 tarball<span class="meta">3.1k</span></div>
+        <div class="row"><span class="dot"></span>春秋蝉的配色推演<span class="meta">884</span></div>
+
+        <div class="nav-label">插件</div>
+        <div class="row"><span class="dot"></span>插件市场</div>
+        <div class="row"><span class="dot"></span>定时任务</div>
+        <div class="row"><span class="dot"></span>技能</div>
+
+        <div class="side-foot">设置 · 账户</div>
+      </aside>
+
+      <main class="main">
+        <header class="top">
+          <h1>大爱仙尊 · 春秋蝉</h1>
+          <span class="chip">SESSION</span>
+        </header>
+
+        <div class="thread">
+          <div class="thread-inner">
+            <div class="user">先做一个冷冽的漫画感皮肤，右下角要有一个 Q 版方源，实时显示我用了多少 token。</div>
+
+            <article class="assistant">
+              <h3>皮囊先立骨</h3>
+              <p>
+                底色压到 <code>#06070A</code>，所有面只比它亮一档；分隔线用 6%–22% 的霜白，
+                朱色只留给主行动与印章。形制上把圆角收到 2–6px，标题换成宋体，
+                页面四角打上裁切线 —— 观感像分镜纸，而不像一块玻璃。
+              </p>
+              <div class="tool"><b>theme.register</b> 大爱仙尊 · 118 个 alias token<span class="ok">已应用</span></div>
+              <pre><span class="c">// 挂件与皮肤共用同一份数据</span>
+<span class="k">const</span> <span class="f">usage</span> = useProjection(<span class="s">'tokenUsage'</span>)
+<span class="k">const</span> <span class="f">total</span> = usage.uncachedInputTokens + usage.cacheReadTokens
+  + usage.cacheWriteTokens + usage.outputTokens</pre>
+              <div class="seal-line">春秋蝉 · 第八转</div>
+              <p>
+                挂件坐在 <code>shell.overlay</code> 里，探针挂在 <code>conversation.composer.dock</code>，
+                零高度、零视觉，只负责把会话投影推给右下角的方源。
+              </p>
+            </article>
+
+            <div class="user">再给我算钱：这一炉烧了多少元石，什么时候跑更便宜。</div>
+
+            <article class="assistant">
+              <h3>四个桶，再加一本账</h3>
+              <p>
+                输入、缓存读、缓存写、输出分四行列出，顶部只给一个总数字；命中率单独算，
+                上下文占用按 <b>投影 token / 窗口</b> 给百分比。数字全部等宽，变化时闪一次冷光。
+              </p>
+              <p>
+                元石按官方峰谷价折算：高峰是北京时间工作日 <b>9:00–12:00、14:00–18:00</b>，
+                其余时段（含周末与节假日）半价。卡片会告诉你离转档还有多久、同量能省多少。
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <footer class="composer">
+          <div class="composer-inner">
+            <div class="card">
+              <div class="text">继续，把 HUD 的展开动效也带上…</div>
+              <div class="dock">
+                <span>3 轮 · 12 步</span>
+                <span class="sep"></span>
+                <span>3.42M tok</span>
+                <span class="sep"></span>
+                <span>命中 97%</span>
+                <span class="ring">
+                  <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                    <circle cx="7" cy="7" r="5.4" fill="none" stroke="rgba(226,236,246,.16)" stroke-width="1.6" />
+                    <circle cx="7" cy="7" r="5.4" fill="none" stroke="#8fb6d9" stroke-width="1.6"
+                      stroke-linecap="round" stroke-dasharray="34" stroke-dashoffset="20" transform="rotate(-90 7 7)" />
+                  </svg>
+                  42%
+                </span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <div class="dl-frame" aria-hidden="true">
+      <i></i><i></i><i></i><i></i>
+      <b>大爱仙尊</b>
+    </div>
+
+    <div class="dl-hud" data-open="true" data-busy="true">
+      <section class="dl-card" aria-label="本会话 token 用量">
+        <header class="dl-head">
+          <span class="dl-seal">大爱</span>
+          <div>
+            <h2>大爱仙尊</h2>
+            <p>春秋蝉 · 实时用量</p>
+          </div>
+          <button type="button" class="dl-close" aria-label="收起">×</button>
+        </header>
+
+        <div class="dl-total">
+          <strong data-flash="true">3.42M</strong>
+          <span>TOKENS</span>
+          <em>命中 97%</em>
+        </div>
+
+        <div class="dl-meter" aria-hidden="true">
+          <i class="dl-m-in" style="width: 3%"></i>
+          <i class="dl-m-cr" style="width: 90.6%"></i>
+          <i class="dl-m-cw" style="width: 0.4%"></i>
+          <i class="dl-m-out" style="width: 6%"></i>
+        </div>
+
+        <dl class="dl-rows">
+          <dt style="--dl-dot: #33414f">输入</dt>
+          <dd>102,400</dd>
+          <dt style="--dl-dot: #4f6b82">缓存读</dt>
+          <dd>3,098,200</dd>
+          <dt style="--dl-dot: #7d94a8">缓存写</dt>
+          <dd>12,600</dd>
+          <dt style="--dl-dot: #a62a31">输出</dt>
+          <dd>218,900</dd>
+        </dl>
+
+        <div class="dl-context">
+          <span>上下文 <b>42%</b></span>
+          <span>84.2k / 200k</span>
+        </div>
+
+        <div class="dl-cost">
+          <span class="dl-cost-label">元石</span>
+          <b>¥2.07</b>
+          <button type="button" class="dl-model" title="按哪个模型计价">Flash</button>
+        </div>
+
+        <div class="dl-peak" data-peak="true">
+          <i aria-hidden="true"></i>
+          <span>高峰档</span>
+          <span class="dl-peak-next">转空闲 21 分钟</span>
+        </div>
+
+        <p class="dl-advice">再等 21 分钟（12:00）转空闲，同量约省 ¥1.04。</p>
+
+        <footer class="dl-foot">
+          <button type="button" class="dl-btn" data-on="true">皮囊 · 开</button>
+          <button type="button" class="dl-btn">收起</button>
+          <span style="margin-left: auto; font-size: 9px; color: #3f4854; letter-spacing: 0.08em">v0.1.0</span>
+        </footer>
+
+        <p class="dl-quote">「不过是些许风霜罢了。」</p>
+      </section>
+
+      <button type="button" class="dl-figure" aria-expanded="true" aria-label="大爱仙尊 · 方源">
+        <span class="dl-tag"><i>推演中</i><b>3.42M</b><i>tok</i><i>· ¥2.07</i></span>
+        <span class="dl-glow-plate" aria-hidden="true"></span>
+        <span class="dl-svg-host"><svg class="dl-svg" viewBox="0 0 160 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Q版方源">
+  <defs>
+    <radialGradient id="dl-halo" cx="50%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#A62A31" stop-opacity=".14" />
+      <stop offset=".62" stop-color="#A62A31" stop-opacity=".03" />
+      <stop offset="1" stop-color="#A62A31" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="dl-hair" x1=".2" y1="0" x2=".75" y2="1">
+      <stop offset="0" stop-color="#F8FBFE" />
+      <stop offset=".45" stop-color="#E2EAF2" />
+      <stop offset="1" stop-color="#A6B5C6" />
+    </linearGradient>
+    <linearGradient id="dl-robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171C24" />
+      <stop offset=".5" stop-color="#0B0E13" />
+      <stop offset="1" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="dl-blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C0333B" />
+      <stop offset="1" stop-color="#5E1218" />
+    </linearGradient>
+    <filter id="dl-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4.5" />
+    </filter>
+  </defs>
+
+  <ellipse cx="80" cy="84" rx="64" ry="68" fill="url(#dl-halo)" />
+  <ellipse class="dl-shadow" cx="80" cy="186" rx="39" ry="5" fill="#000" opacity=".7" filter="url(#dl-soft)" />
+
+  <g class="dl-art">
+    <!-- 后发：整片垂到肩线以下，末端削尖 -->
+    <g class="dl-hair-back">
+      <path d="M80 24C50 26 34 54 34 92c0 28 4 58 10 86 3-26 5-52 9-74 8 12 19 18 27 18s19-6 27-18c4 22 6 48 9 74 6-28 10-58 10-86 0-38-16-66-46-68Z" fill="url(#dl-hair)" />
+      <path d="M42 96c-3 28-2 56 3 80 3-24 5-50 10-70Z" fill="#B9C6D5" opacity=".55" />
+      <path d="M118 96c3 28 2 56-3 80-2-24-5-50-10-70Z" fill="#B9C6D5" opacity=".55" />
+      <path d="M48 148 43 178M112 148l5 30M56 132l-3 22M104 132l3 22" stroke="#8B9CB0" stroke-width=".9" opacity=".45" />
+      <!-- 冷边光：把白发从夜色里切出来 -->
+      <path d="M42 58c-6 20-7 44-4 66" stroke="rgba(226,236,246,.55)" stroke-width="1.1" fill="none" />
+    </g>
+
+    <!-- 黑袍：宽肩、立领、朱红内衬 -->
+    <g class="dl-body">
+      <path d="M20 196c2-36 22-56 44-60h32c22 4 42 24 44 60Z" fill="url(#dl-robe)" />
+      <path d="M24 196c3-24 11-38 23-47" stroke="rgba(143,182,217,.34)" stroke-width="1.2" fill="none" />
+      <path d="M30 196c4-18 12-30 22-38" stroke="rgba(226,236,246,.07)" stroke-width="1" fill="none" />
+      <path d="M136 196c-4-24-12-38-24-47" stroke="rgba(226,236,246,.05)" stroke-width="1" fill="none" />
+
+      <!-- 立领（黑）＋朱红内缘 -->
+      <path d="M66 126c4-3 9-5 14-5s10 2 14 5l-2 10c-4-2-8-3-12-3s-8 1-12 3Z" fill="#0C1015" />
+      <path d="M67 126.6c4-2.8 8-4.2 13-4.2s9 1.4 13 4.2" stroke="#B3272D" stroke-width="1.6" fill="none" />
+      <path d="M67 125.6c4-2.8 8-4.2 13-4.2s9 1.4 13 4.2" stroke="rgba(226,236,246,.35)" stroke-width=".7" fill="none" />
+
+      <!-- 交叉领 -->
+      <path d="M62 136 80 173l-6 3-17-36Z" fill="url(#dl-blade)" />
+      <path d="M98 136 80 173l6 3 17-36Z" fill="url(#dl-blade)" />
+      <path d="M56 138 76 178l-7 3-17-38Z" fill="#10141A" />
+      <path d="M104 138 84 178l7 3 17-38Z" fill="#10141A" />
+      <path d="M56 138 76 178M104 138 84 178" stroke="rgba(4,5,8,.9)" stroke-width="1.5" />
+      <path d="M61 139 79 174M99 139 81 174" stroke="rgba(179,39,45,.45)" stroke-width=".8" />
+
+      <!-- 左肩朱绳 -->
+      <path d="M52 149c-2 8-1 15 1 21" stroke="#8E2028" stroke-width="1.4" fill="none" />
+      <path d="M49 170c2 4 5 6 8 6" stroke="#A62A31" stroke-width="1.2" fill="none" />
+    </g>
+
+    <!-- 颈、脸 -->
+    <path d="M70 112h20l-2 30H72Z" fill="#D7C7B8" />
+    <path d="M80 44c18 0 30 14 30 34 0 21-11 38-30 49-19-11-30-28-30-49 0-20 12-34 30-34Z" fill="#F3EEE7" />
+    <path d="M52 90c3 15 10 25 20 32-10-11-16-21-20-32Z" fill="rgba(196,170,152,.26)" />
+    <path d="M108 86c-1 14-7 26-16 34 11-11 16-22 16-34Z" fill="rgba(150,120,105,.22)" />
+
+    <!-- 眼：墨线窄眼，只在瞳底留一线朱 -->
+    <g class="dl-eyes">
+      <path d="M56 84c5-4 15-4 20 0-5 3.4-15 3.4-20 0Z" fill="#FBFDFE" opacity=".9" />
+      <path d="M84 84c5-4 15-4 20 0-5 3.4-15 3.4-20 0Z" fill="#FBFDFE" opacity=".9" />
+      <ellipse cx="66" cy="84" rx="3.2" ry="3.8" fill="#141014" />
+      <ellipse cx="94" cy="84" rx="3.2" ry="3.8" fill="#141014" />
+      <path class="dl-iris" d="M63.2 84.8c1.6 2 4.2 2 5.6 0" stroke="#B3272D" stroke-width="1.4" fill="none" />
+      <path class="dl-iris" d="M91.2 84.8c1.6 2 4.2 2 5.6 0" stroke="#B3272D" stroke-width="1.4" fill="none" />
+      <circle cx="67.1" cy="82.4" r=".85" fill="#FFFFFF" opacity=".75" />
+      <circle cx="95.1" cy="82.4" r=".85" fill="#FFFFFF" opacity=".75" />
+
+      <path d="M54 83.4c5.6-5.6 18.6-5.6 24 0l-.8 2.4c-5.4-4.4-17-4.4-22.4 0Z" fill="#0A0E13" />
+      <path d="M82 83.4c5.4-5.6 18.4-5.6 24 0l-.8 2.4c-5.4-4.4-17-4.4-22.4 0Z" fill="#0A0E13" />
+
+      <path d="M52.5 72.6 75 69.2M85 69.2 107.5 72.6" stroke="#1A2028" stroke-width="2.4" stroke-linecap="round" />
+      <path d="M55 75 72 72.4M88 72.4 105 75" stroke="rgba(26,32,40,.35)" stroke-width=".7" stroke-linecap="round" />
+    </g>
+
+    <path d="M80 91.5v5.6" stroke="#C3AC9C" stroke-width="1" stroke-linecap="round" />
+    <path d="M76 108.4 84.2 108" stroke="#966A63" stroke-width="1.4" stroke-linecap="round" />
+
+    <!-- 前发：中分碎刘海 + 过肩侧发 + 朱红发带 -->
+    <g class="dl-hair-front">
+      <path d="M80 26C57 32 45 55 43 86c5-16 13-27 22-33-4 10-6 21-6 32 6-15 14-26 21-32 7 6 15 17 21 32 0-11-2-22-6-32 9 6 17 17 22 33-2-31-14-54-37-60Z" fill="#EFF4F9" />
+      <path d="M62 31c-10 16-14 34-16 55 6-19 13-32 22-40Z" fill="#DDE6EF" />
+      <path d="M98 31c10 16 14 34 16 55-6-19-13-32-22-40Z" fill="#DDE6EF" />
+      <path d="M80 29c-2 16-2 31-1 44M73.6 32.6c-3 15-4.4 28-4.4 40M86.4 32.6c3 15 4.4 28 4.4 40" stroke="#C1CEDB" stroke-width=".75" fill="none" opacity=".7" />
+      <path d="M80 28v18" stroke="#B9C6D5" stroke-width="1.1" opacity=".8" />
+      <path d="M80 30c-7 6-11 15-13 24 7-10 13-18 13-24Z" fill="#D2DCE8" opacity=".85" />
+      <path d="M80 30c7 6 11 15 13 24-7-10-13-18-13-24Z" fill="#D2DCE8" opacity=".85" />
+      <path d="M44 84c-3 30-1 58 5 78 2-26 3-52 9-70Z" fill="#DCE5EE" />
+      <path d="M116 84c3 30 1 58-5 78-2-26-3-52-9-70Z" fill="#DCE5EE" />
+      <path d="M47 96c-2 23 0 45 4 59M113 96c2 23 0 45-4 59" stroke="#B7C4D3" stroke-width=".75" fill="none" opacity=".5" />
+      <path d="M104 44c9 10 13 21 15 33" stroke="#A62A31" stroke-width="2.4" fill="none" opacity=".85" />
+      <path d="M104 44c9 10 13 21 15 33" stroke="#C0333B" stroke-width=".9" fill="none" opacity=".6" />
+    </g>
+
+    <!-- 春秋蝉：右肩，推演时翅会颤 -->
+    <g class="dl-cicada" transform="translate(115,150) rotate(-18)">
+      <ellipse cx="0" cy="0" rx="5" ry="7.6" fill="#5F8574" />
+      <path d="M0-7C-7-5-10 2-8 9-5 5-2 0 0-2Z" fill="#D6E6DF" opacity=".5" />
+      <path d="M0-7C7-5 10 2 8 9 5 5 2 0 0-2Z" fill="#D6E6DF" opacity=".36" />
+      <path d="M0-2v8" stroke="#2A3B34" stroke-width=".7" opacity=".75" />
+      <path d="M-1.6-4.6h3.2" stroke="#2A3B34" stroke-width=".7" opacity=".5" />
+      <circle cx="0" cy="-8" r="1.9" fill="#23302B" />
+    </g>
+  </g>
+</svg></span>
+      </button>
+    </div>
+  </body>
+</html>

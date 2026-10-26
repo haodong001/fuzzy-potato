@@ -1,0 +1,138 @@
+/* =========================================================================
+   大爱仙尊 · 春秋蝉 — chrome layer
+   Colours are NOT here: they arrive as alias tokens through ctx.theme.register
+   (see src/tokens.mjs). This sheet only owns what tokens cannot express:
+   corner radii, the display face, selection, crop marks and scrollbar feel.
+   Everything is keyed on html[data-dalian-skin="on"] so switching the skin off
+   in the HUD leaves zero residue.
+   ========================================================================= */
+
+html[data-dalian-skin='on'] {
+  /* Sharper corners: printed page, not a glass panel. */
+  --dsw-radius-xs: 2px;
+  --dsw-radius-sm: 3px;
+  --dsw-radius-md: 4px;
+  --dsw-radius-lg: 6px;
+  --dsw-radius-xl: 8px;
+  --dsw-radius-panel: 10px;
+
+  /* Display face for titles and the HUD; falls back through CN serifs. */
+  --dalian-serif: 'Songti SC', 'STSong', 'SimSun', 'Noto Serif SC', 'Source Han Serif SC',
+    'Source Han Serif CN', serif;
+  --dalian-mono: 'JetBrains Mono', 'SF Mono', 'Cascadia Mono', Consolas, 'SimSun', monospace;
+  --dalian-cold-line: rgba(226, 236, 246, 0.14);
+  --dalian-zhu: #a62a31;
+  --dalian-shuang: #8fb6d9;
+}
+
+/* ---- Type: headings read as cut stone, body stays the system UI face ---- */
+html[data-dalian-skin='on'] h1,
+html[data-dalian-skin='on'] h2,
+html[data-dalian-skin='on'] h3,
+html[data-dalian-skin='on'] h4,
+html[data-dalian-skin='on'] h5 {
+  font-family: var(--dalian-serif);
+  font-weight: 500;
+  letter-spacing: 0.015em;
+}
+
+/* ---- Selection: frost blue over ink, never the browser default ---- */
+html[data-dalian-skin='on'] ::selection {
+  background: rgba(143, 182, 217, 0.28);
+  color: #f5f8fb;
+}
+
+/* ---- Scrollbar: a hairline that thickens under the pointer ---- */
+html[data-dalian-skin='on'] ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html[data-dalian-skin='on'] ::-webkit-scrollbar-track {
+  background: transparent;
+}
+html[data-dalian-skin='on'] ::-webkit-scrollbar-thumb {
+  background: rgba(226, 236, 246, 0.09);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: content-box;
+}
+html[data-dalian-skin='on'] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(226, 236, 246, 0.2);
+  background-clip: content-box;
+}
+
+/* ---- Crop marks: four corner brackets, the page treated as a manga panel ---- */
+.dl-frame {
+  display: none;
+  position: fixed;
+  inset: 8px;
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0.7;
+}
+html[data-dalian-skin='on'] .dl-frame {
+  display: block;
+}
+.dl-frame i {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: rgba(226, 236, 246, 0.18);
+  border-style: solid;
+  border-width: 0;
+}
+.dl-frame i:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-top-width: 1px;
+  border-left-width: 1px;
+}
+.dl-frame i:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-top-width: 1px;
+  border-right-width: 1px;
+}
+.dl-frame i:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+.dl-frame i:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+/* The seal hangs on the right crop mark, in the empty margin beside the
+   transcript — a painter's mark, not chrome. */
+.dl-frame b {
+  position: absolute;
+  top: 15%;
+  right: 2px;
+  writing-mode: vertical-rl;
+  font-family: var(--dalian-serif);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.34em;
+  color: rgba(166, 42, 49, 0.8);
+  padding: 5px 2px;
+  border: 1px solid rgba(166, 42, 49, 0.35);
+  background: rgba(166, 42, 49, 0.06);
+  opacity: 0.9;
+  transition: opacity 200ms ease;
+}
+
+/* 用量卡片展开时，右缘的朱印让位，避免两件东西压在一起。 */
+html[data-dalian-card='open'] .dl-frame b {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-dalian-skin='on'] * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "dsh-dalian-xianzun",
+  "version": "0.1.0",
+  "private": true,
+  "description": "大爱仙尊 · 春秋蝉 — a cold manga skin for the DeepSeek Harness web GUI, with a chibi Fang Yuan HUD that reports live session token usage.",
+  "type": "module",
+  "icon": "assets/seal.svg",
+  "keywords": ["dsh", "deepseek-harness", "dsh-plugin", "theme", "skin", "fangyuan", "tokens"],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "build": "node tools/build.mjs"
+  },
+  "files": [
+    "lib",
+    "client",
+    "src",
+    "tools",
+    "preview",
+    "assets",
+    "cordis.patch.yml",
+    "skin.json",
+    "README.md"
+  ]
+}

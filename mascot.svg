@@ -1,0 +1,119 @@
+<svg class="dl-svg" viewBox="0 0 160 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Q版方源">
+  <defs>
+    <radialGradient id="dl-halo" cx="50%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#A62A31" stop-opacity=".14" />
+      <stop offset=".62" stop-color="#A62A31" stop-opacity=".03" />
+      <stop offset="1" stop-color="#A62A31" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="dl-hair" x1=".2" y1="0" x2=".75" y2="1">
+      <stop offset="0" stop-color="#F8FBFE" />
+      <stop offset=".45" stop-color="#E2EAF2" />
+      <stop offset="1" stop-color="#A6B5C6" />
+    </linearGradient>
+    <linearGradient id="dl-robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171C24" />
+      <stop offset=".5" stop-color="#0B0E13" />
+      <stop offset="1" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="dl-blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C0333B" />
+      <stop offset="1" stop-color="#5E1218" />
+    </linearGradient>
+    <filter id="dl-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4.5" />
+    </filter>
+  </defs>
+
+  <ellipse cx="80" cy="84" rx="64" ry="68" fill="url(#dl-halo)" />
+  <ellipse class="dl-shadow" cx="80" cy="186" rx="39" ry="5" fill="#000" opacity=".7" filter="url(#dl-soft)" />
+
+  <g class="dl-art">
+    <!-- 后发：整片垂到肩线以下，末端削尖 -->
+    <g class="dl-hair-back">
+      <path d="M80 24C50 26 34 54 34 92c0 28 4 58 10 86 3-26 5-52 9-74 8 12 19 18 27 18s19-6 27-18c4 22 6 48 9 74 6-28 10-58 10-86 0-38-16-66-46-68Z" fill="url(#dl-hair)" />
+      <path d="M42 96c-3 28-2 56 3 80 3-24 5-50 10-70Z" fill="#B9C6D5" opacity=".55" />
+      <path d="M118 96c3 28 2 56-3 80-2-24-5-50-10-70Z" fill="#B9C6D5" opacity=".55" />
+      <path d="M48 148 43 178M112 148l5 30M56 132l-3 22M104 132l3 22" stroke="#8B9CB0" stroke-width=".9" opacity=".45" />
+      <!-- 冷边光：把白发从夜色里切出来 -->
+      <path d="M42 58c-6 20-7 44-4 66" stroke="rgba(226,236,246,.55)" stroke-width="1.1" fill="none" />
+    </g>
+
+    <!-- 黑袍：宽肩、立领、朱红内衬 -->
+    <g class="dl-body">
+      <path d="M20 196c2-36 22-56 44-60h32c22 4 42 24 44 60Z" fill="url(#dl-robe)" />
+      <path d="M24 196c3-24 11-38 23-47" stroke="rgba(143,182,217,.34)" stroke-width="1.2" fill="none" />
+      <path d="M30 196c4-18 12-30 22-38" stroke="rgba(226,236,246,.07)" stroke-width="1" fill="none" />
+      <path d="M136 196c-4-24-12-38-24-47" stroke="rgba(226,236,246,.05)" stroke-width="1" fill="none" />
+
+      <!-- 立领（黑）＋朱红内缘 -->
+      <path d="M66 126c4-3 9-5 14-5s10 2 14 5l-2 10c-4-2-8-3-12-3s-8 1-12 3Z" fill="#0C1015" />
+      <path d="M67 126.6c4-2.8 8-4.2 13-4.2s9 1.4 13 4.2" stroke="#B3272D" stroke-width="1.6" fill="none" />
+      <path d="M67 125.6c4-2.8 8-4.2 13-4.2s9 1.4 13 4.2" stroke="rgba(226,236,246,.35)" stroke-width=".7" fill="none" />
+
+      <!-- 交叉领 -->
+      <path d="M62 136 80 173l-6 3-17-36Z" fill="url(#dl-blade)" />
+      <path d="M98 136 80 173l6 3 17-36Z" fill="url(#dl-blade)" />
+      <path d="M56 138 76 178l-7 3-17-38Z" fill="#10141A" />
+      <path d="M104 138 84 178l7 3 17-38Z" fill="#10141A" />
+      <path d="M56 138 76 178M104 138 84 178" stroke="rgba(4,5,8,.9)" stroke-width="1.5" />
+      <path d="M61 139 79 174M99 139 81 174" stroke="rgba(179,39,45,.45)" stroke-width=".8" />
+
+      <!-- 左肩朱绳 -->
+      <path d="M52 149c-2 8-1 15 1 21" stroke="#8E2028" stroke-width="1.4" fill="none" />
+      <path d="M49 170c2 4 5 6 8 6" stroke="#A62A31" stroke-width="1.2" fill="none" />
+    </g>
+
+    <!-- 颈、脸 -->
+    <path d="M70 112h20l-2 30H72Z" fill="#D7C7B8" />
+    <path d="M80 44c18 0 30 14 30 34 0 21-11 38-30 49-19-11-30-28-30-49 0-20 12-34 30-34Z" fill="#F3EEE7" />
+    <path d="M52 90c3 15 10 25 20 32-10-11-16-21-20-32Z" fill="rgba(196,170,152,.26)" />
+    <path d="M108 86c-1 14-7 26-16 34 11-11 16-22 16-34Z" fill="rgba(150,120,105,.22)" />
+
+    <!-- 眼：墨线窄眼，只在瞳底留一线朱 -->
+    <g class="dl-eyes">
+      <path d="M56 84c5-4 15-4 20 0-5 3.4-15 3.4-20 0Z" fill="#FBFDFE" opacity=".9" />
+      <path d="M84 84c5-4 15-4 20 0-5 3.4-15 3.4-20 0Z" fill="#FBFDFE" opacity=".9" />
+      <ellipse cx="66" cy="84" rx="3.2" ry="3.8" fill="#141014" />
+      <ellipse cx="94" cy="84" rx="3.2" ry="3.8" fill="#141014" />
+      <path class="dl-iris" d="M63.2 84.8c1.6 2 4.2 2 5.6 0" stroke="#B3272D" stroke-width="1.4" fill="none" />
+      <path class="dl-iris" d="M91.2 84.8c1.6 2 4.2 2 5.6 0" stroke="#B3272D" stroke-width="1.4" fill="none" />
+      <circle cx="67.1" cy="82.4" r=".85" fill="#FFFFFF" opacity=".75" />
+      <circle cx="95.1" cy="82.4" r=".85" fill="#FFFFFF" opacity=".75" />
+
+      <path d="M54 83.4c5.6-5.6 18.6-5.6 24 0l-.8 2.4c-5.4-4.4-17-4.4-22.4 0Z" fill="#0A0E13" />
+      <path d="M82 83.4c5.4-5.6 18.4-5.6 24 0l-.8 2.4c-5.4-4.4-17-4.4-22.4 0Z" fill="#0A0E13" />
+
+      <path d="M52.5 72.6 75 69.2M85 69.2 107.5 72.6" stroke="#1A2028" stroke-width="2.4" stroke-linecap="round" />
+      <path d="M55 75 72 72.4M88 72.4 105 75" stroke="rgba(26,32,40,.35)" stroke-width=".7" stroke-linecap="round" />
+    </g>
+
+    <path d="M80 91.5v5.6" stroke="#C3AC9C" stroke-width="1" stroke-linecap="round" />
+    <path d="M76 108.4 84.2 108" stroke="#966A63" stroke-width="1.4" stroke-linecap="round" />
+
+    <!-- 前发：中分碎刘海 + 过肩侧发 + 朱红发带 -->
+    <g class="dl-hair-front">
+      <path d="M80 26C57 32 45 55 43 86c5-16 13-27 22-33-4 10-6 21-6 32 6-15 14-26 21-32 7 6 15 17 21 32 0-11-2-22-6-32 9 6 17 17 22 33-2-31-14-54-37-60Z" fill="#EFF4F9" />
+      <path d="M62 31c-10 16-14 34-16 55 6-19 13-32 22-40Z" fill="#DDE6EF" />
+      <path d="M98 31c10 16 14 34 16 55-6-19-13-32-22-40Z" fill="#DDE6EF" />
+      <path d="M80 29c-2 16-2 31-1 44M73.6 32.6c-3 15-4.4 28-4.4 40M86.4 32.6c3 15 4.4 28 4.4 40" stroke="#C1CEDB" stroke-width=".75" fill="none" opacity=".7" />
+      <path d="M80 28v18" stroke="#B9C6D5" stroke-width="1.1" opacity=".8" />
+      <path d="M80 30c-7 6-11 15-13 24 7-10 13-18 13-24Z" fill="#D2DCE8" opacity=".85" />
+      <path d="M80 30c7 6 11 15 13 24-7-10-13-18-13-24Z" fill="#D2DCE8" opacity=".85" />
+      <path d="M44 84c-3 30-1 58 5 78 2-26 3-52 9-70Z" fill="#DCE5EE" />
+      <path d="M116 84c3 30 1 58-5 78-2-26-3-52-9-70Z" fill="#DCE5EE" />
+      <path d="M47 96c-2 23 0 45 4 59M113 96c2 23 0 45-4 59" stroke="#B7C4D3" stroke-width=".75" fill="none" opacity=".5" />
+      <path d="M104 44c9 10 13 21 15 33" stroke="#A62A31" stroke-width="2.4" fill="none" opacity=".85" />
+      <path d="M104 44c9 10 13 21 15 33" stroke="#C0333B" stroke-width=".9" fill="none" opacity=".6" />
+    </g>
+
+    <!-- 春秋蝉：右肩，推演时翅会颤 -->
+    <g class="dl-cicada" transform="translate(115,150) rotate(-18)">
+      <ellipse cx="0" cy="0" rx="5" ry="7.6" fill="#5F8574" />
+      <path d="M0-7C-7-5-10 2-8 9-5 5-2 0 0-2Z" fill="#D6E6DF" opacity=".5" />
+      <path d="M0-7C7-5 10 2 8 9 5 5 2 0 0-2Z" fill="#D6E6DF" opacity=".36" />
+      <path d="M0-2v8" stroke="#2A3B34" stroke-width=".7" opacity=".75" />
+      <path d="M-1.6-4.6h3.2" stroke="#2A3B34" stroke-width=".7" opacity=".5" />
+      <circle cx="0" cy="-8" r="1.9" fill="#23302B" />
+    </g>
+  </g>
+</svg>

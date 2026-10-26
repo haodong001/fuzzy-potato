@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="zh-CN" data-dalian-skin="on">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>大爱仙尊 · 春秋蝉 — 皮肤预览</title>
+    <style>
+      :root {
+__TOKENS_CSS__
+      }
+
+__SKIN_CSS__
+
+__HUD_CSS__
+
+__PREVIEW_CSS__
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="side">
+        <div class="brand"><i></i>DeepSeek Harness</div>
+        <div class="new"><b>+</b> 新建会话</div>
+
+        <div class="nav-label">会话</div>
+        <div class="row on"><span class="dot"></span>大爱仙尊 · 春秋蝉<span class="meta">3.42M</span></div>
+        <div class="row"><span class="dot"></span>把插件打包成 tarball<span class="meta">3.1k</span></div>
+        <div class="row"><span class="dot"></span>春秋蝉的配色推演<span class="meta">884</span></div>
+
+        <div class="nav-label">插件</div>
+        <div class="row"><span class="dot"></span>插件市场</div>
+        <div class="row"><span class="dot"></span>定时任务</div>
+        <div class="row"><span class="dot"></span>技能</div>
+
+        <div class="side-foot">设置 · 账户</div>
+      </aside>
+
+      <main class="main">
+        <header class="top">
+          <h1>大爱仙尊 · 春秋蝉</h1>
+          <span class="chip">SESSION</span>
+        </header>
+
+        <div class="thread">
+          <div class="thread-inner">
+            <div class="user">先做一个冷冽的漫画感皮肤，右下角要有一个 Q 版方源，实时显示我用了多少 token。</div>
+
+            <article class="assistant">
+              <h3>皮囊先立骨</h3>
+              <p>
+                底色压到 <code>#06070A</code>，所有面只比它亮一档；分隔线用 6%–22% 的霜白，
+                朱色只留给主行动与印章。形制上把圆角收到 2–6px，标题换成宋体，
+                页面四角打上裁切线 —— 观感像分镜纸，而不像一块玻璃。
+              </p>
+              <div class="tool"><b>theme.register</b> 大爱仙尊 · 118 个 alias token<span class="ok">已应用</span></div>
+              <pre><span class="c">// 挂件与皮肤共用同一份数据</span>
+<span class="k">const</span> <span class="f">usage</span> = useProjection(<span class="s">'tokenUsage'</span>)
+<span class="k">const</span> <span class="f">total</span> = usage.uncachedInputTokens + usage.cacheReadTokens
+  + usage.cacheWriteTokens + usage.outputTokens</pre>
+              <div class="seal-line">春秋蝉 · 第八转</div>
+              <p>
+                挂件坐在 <code>shell.overlay</code> 里，探针挂在 <code>conversation.composer.dock</code>，
+                零高度、零视觉，只负责把会话投影推给右下角的方源。
+              </p>
+            </article>
+
+            <div class="user">再给我算钱：这一炉烧了多少元石，什么时候跑更便宜。</div>
+
+            <article class="assistant">
+              <h3>四个桶，再加一本账</h3>
+              <p>
+                输入、缓存读、缓存写、输出分四行列出，顶部只给一个总数字；命中率单独算，
+                上下文占用按 <b>投影 token / 窗口</b> 给百分比。数字全部等宽，变化时闪一次冷光。
+              </p>
+              <p>
+                元石按官方峰谷价折算：高峰是北京时间工作日 <b>9:00–12:00、14:00–18:00</b>，
+                其余时段（含周末与节假日）半价。卡片会告诉你离转档还有多久、同量能省多少。
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <footer class="composer">
+          <div class="composer-inner">
+            <div class="card">
+              <div class="text">继续，把 HUD 的展开动效也带上…</div>
+              <div class="dock">
+                <span>3 轮 · 12 步</span>
+                <span class="sep"></span>
+                <span>3.42M tok</span>
+                <span class="sep"></span>
+                <span>命中 97%</span>
+                <span class="ring">
+                  <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                    <circle cx="7" cy="7" r="5.4" fill="none" stroke="rgba(226,236,246,.16)" stroke-width="1.6" />
+                    <circle cx="7" cy="7" r="5.4" fill="none" stroke="#8fb6d9" stroke-width="1.6"
+                      stroke-linecap="round" stroke-dasharray="34" stroke-dashoffset="20" transform="rotate(-90 7 7)" />
+                  </svg>
+                  42%
+                </span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <div class="dl-frame" aria-hidden="true">
+      <i></i><i></i><i></i><i></i>
+      <b>大爱仙尊</b>
+    </div>
+
+    <div class="dl-hud" data-open="true" data-busy="true">
+      <section class="dl-card" aria-label="本会话 token 用量">
+        <header class="dl-head">
+          <span class="dl-seal">大爱</span>
+          <div>
+            <h2>大爱仙尊</h2>
+            <p>春秋蝉 · 实时用量</p>
+          </div>
+          <button type="button" class="dl-close" aria-label="收起">×</button>
+        </header>
+
+        <div class="dl-total">
+          <strong data-flash="true">3.42M</strong>
+          <span>TOKENS</span>
+          <em>命中 97%</em>
+        </div>
+
+        <div class="dl-meter" aria-hidden="true">
+          <i class="dl-m-in" style="width: 3%"></i>
+          <i class="dl-m-cr" style="width: 90.6%"></i>
+          <i class="dl-m-cw" style="width: 0.4%"></i>
+          <i class="dl-m-out" style="width: 6%"></i>
+        </div>
+
+        <dl class="dl-rows">
+          <dt style="--dl-dot: #33414f">输入</dt>
+          <dd>102,400</dd>
+          <dt style="--dl-dot: #4f6b82">缓存读</dt>
+          <dd>3,098,200</dd>
+          <dt style="--dl-dot: #7d94a8">缓存写</dt>
+          <dd>12,600</dd>
+          <dt style="--dl-dot: #a62a31">输出</dt>
+          <dd>218,900</dd>
+        </dl>
+
+        <div class="dl-context">
+          <span>上下文 <b>42%</b></span>
+          <span>84.2k / 200k</span>
+        </div>
+
+        <div class="dl-cost">
+          <span class="dl-cost-label">元石</span>
+          <b>¥2.07</b>
+          <button type="button" class="dl-model" title="按哪个模型计价">Flash</button>
+        </div>
+
+        <div class="dl-peak" data-peak="true">
+          <i aria-hidden="true"></i>
+          <span>高峰档</span>
+          <span class="dl-peak-next">转空闲 21 分钟</span>
+        </div>
+
+        <p class="dl-advice">再等 21 分钟（12:00）转空闲，同量约省 ¥1.04。</p>
+
+        <footer class="dl-foot">
+          <button type="button" class="dl-btn" data-on="true">皮囊 · 开</button>
+          <button type="button" class="dl-btn">收起</button>
+          <span style="margin-left: auto; font-size: 9px; color: #3f4854; letter-spacing: 0.08em">v__VERSION__</span>
+        </footer>
+
+        <p class="dl-quote">「不过是些许风霜罢了。」</p>
+      </section>
+
+      <button type="button" class="dl-figure" aria-expanded="true" aria-label="大爱仙尊 · 方源">
+        <span class="dl-tag"><i>推演中</i><b>3.42M</b><i>tok</i><i>· ¥2.07</i></span>
+        <span class="dl-glow-plate" aria-hidden="true"></span>
+        <span class="dl-svg-host">__MASCOT__</span>
+      </button>
+    </div>
+  </body>
+</html>

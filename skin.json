@@ -1,0 +1,11 @@
+{
+  "id": "dsh-dalian-xianzun",
+  "name": "大爱仙尊 · 春秋蝉",
+  "kind": "theme",
+  "version": "0.1.0",
+  "client": "./client/client.js",
+  "patch": "./cordis.patch.yml",
+  "entry": "dalian-xianzun",
+  "description": "冷冽漫画感的大爱仙尊皮肤 + Q 版方源实时 token 挂件",
+  "author": "local"
+}
